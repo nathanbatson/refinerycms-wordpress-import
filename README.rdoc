@@ -2,7 +2,8 @@
 
 This litte project is an importer for WordPress XML dumps into refinerycms(-blog). 
 
-You can find the source code on github: https://github.com/mremolt/refinerycms-wordpress-import
+You can find the original source code on github: https://github.com/mremolt/refinerycms-wordpress-import
+(And this fork on: https://github.com/zachris/refinerycms-wordpress-import)
 
 Keep in mind that links to other pages of your blog are just copied, as WordPress exports them as <a>-Tags. 
 If your site (blog) structure uses new urls, the links WILL break! For example, if you used 
