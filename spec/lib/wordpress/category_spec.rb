@@ -18,7 +18,7 @@ describe Refinery::WordPress::Category, :type => :model do
     end
 
     it "should create a BlogCategory" do
-      BlogCategory.should have(1).record
+      Refinery::Blog::Category.should have(1).record
     end
 
     it "should copy the name over to the BlogCategory object" do
