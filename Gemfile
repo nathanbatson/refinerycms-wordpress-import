@@ -1,12 +1,12 @@
 source "http://rubygems.org"
 
-gem "rails", "3.0.9"
+gem "rails", "~>3.2"
 #gem "capybara", ">= 1.0.0.beta1"
 gem "sqlite3"
 gem "rmagick"
 
 group :development, :test do
-  gem "rspec-rails", ">= 2.6.0"
+  gem "rspec-rails", ">= 2.9.0"
   gem "database_cleaner"
   gem 'guard-rspec'
   gem 'ffi'
@@ -15,10 +15,10 @@ group :development, :test do
   gem 'fakeweb'
 end
 
-# To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
+# To use debugger (ruby-debug for Ruby 1.8.7+, debugger for Ruby 1.9.2+)
 # gem 'ruby-debug'
-# gem 'ruby-debug19'
+gem 'debugger'
 
-gem 'refinerycms'
-gem 'refinerycms-blog'
-gem 'refinerycms-wordpress-import', :path => './'
+gem 'refinerycms', "~>2.0.0"
+gem 'refinerycms-blog', "~>2.0.0"
+gem 'refinerycms-wordpress-import2', :path => './'
