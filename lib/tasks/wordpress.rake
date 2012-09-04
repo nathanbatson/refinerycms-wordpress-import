@@ -100,6 +100,7 @@ namespace :wordpress do
     attachments.each do |attachment|
       attachment.replace_url
     end
+    puts "Done"
   end
 
   desc "reset media tables and then import media data from a WordPress XML dump"

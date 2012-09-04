@@ -42,18 +42,26 @@ module Refinery
       end
 
       def to_refinery
-        if image?
-          to_image
-        else
-          to_resource
+        begin
+          if image?
+            to_image
+          else
+            to_resource
+          end
+        rescue Exception => e
+          puts "\tOPS.. could not import #{url}. Reason: #{e}"
         end
       end
 
       def replace_url
-        if image?
-          replace_image_url
-        else
-          replace_resource_url
+        begin
+          if image?
+            replace_image_url
+          else
+            replace_resource_url
+          end
+        rescue Exception => e
+          puts "\tOPS.. could not replace_url #{url}. Reason: #{e}"
         end
       end
 
